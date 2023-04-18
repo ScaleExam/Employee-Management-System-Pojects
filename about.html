@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Employee Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">Employee Portal</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">Employee Details</a>
+                    <a href="./erps/index.php" class="nav-item nav-link">Login<i class="fa fa-sign-in-alt me-3"></i></a>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Header End -->
+        <div class="container-xxl py-5 bg-dark page-header mb-5">
+            <div class="container my-5 pt-5 pb-4">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Employee Details</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb text-uppercase">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Employee Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+         <!-- Category Start -->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Employee Details</h1>
+                <div class="table-responsive">
+                    <table class="table table-hover thead-dark table-bordered table-striped" border="6" cellspacing="0" width="100%">
+                            <thead>
+                                <th>Sl. No.</th>
+                                <th>Employee Name</th>
+                                <th>Designation</th>
+                                <th>Contact No.</th>
+                                <th>City</th>
+                              </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Dr. Supriya Pattanayak</td>
+                                <td>Professor</td>
+                                <td>7008281982</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Dr. Anita Patra</td>
+                                <td>Professor</td>
+                                <td>9437424149</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Dr. A.M. Mohanty</td>
+                                <td>Professor</td>
+                                <td>8895540069</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Prof. Jagannath Padhi</td>
+                                <td>Professor</td>
+                                <td>9437016319</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Dr. Smita Mishra Panda</td>
+                                <td>Professor</td>
+                                <td>7008442061</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Prof. Prasanta Kumar Mohanty</td>
+                                <td>Professor</td>
+                                <td>9437171119</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Dr.P. Srinivasa Rao</td>
+                                <td>Professor</td>
+                                <td>7780696917</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>M. DEVENDER REDDY</td>
+                                <td>Professor</td>
+                                <td>9440940950</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Dr.G.Bhupal Raj</td>
+                                <td>Professor</td>
+                                <td>+919866764942: +918309256645</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Dr.S.P.Nanda</td>
+                                <td>Professor</td>
+                                <td>9437381997, 977</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Dr.K.S.Krishna Prasad</td>
+                                <td>Professor</td>
+                                <td>+919849656757</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Sadique</td>
+                                <td>Professor</td>
+                                <td>7845796247</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>G prasant Kumar</td>
+                                <td>Professor</td>
+                                <td>8479567561</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Dr. Santilata Sahoo</td>
+                                <td>Professor</td>
+                                <td>8984018380</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Dr. Suresh Chandra Pradhan</td>
+                                <td>Professor</td>
+                                <td>7848051078</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Sunder Singh</td>
+                                <td>Professor</td>
+                                <td>78457963242</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Dr. Aruna Kumar Swain</td>
+                                <td>Professor</td>
+                                <td>8917320212</td>
+                                <td>Bhubaneswar</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Adam mahmud</td>
+                                <td>Professor</td>
+                                <td>08166073022</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>CHIRANJEEB PRASAD MOHANTY</td>
+                                <td>Professor</td>
+                                <td>9778674606</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Prof. Sunil Kumar Jha</td>
+                                <td>Professor</td>
+                                <td>9337877658</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>LADU KISHORE RATH</td>
+                                <td>Professor</td>
+                                <td>8658594456</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>DR. ASHISH KUMAR SEN</td>
+                                <td>Professor</td>
+                                <td>09437102141</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Dr. Banitamani Mallik</td>
+                                <td>Professor</td>
+                                <td>9437713627/9777355692</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>Dr. Subasini Pattnaik</td>
+                                <td>Professor</td>
+                                <td>9438079325</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>DrVijay</td>
+                                <td>Professor</td>
+                                <td>9422133495</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>SHARMISTHA SAHU</td>
+                                <td>Professor</td>
+                                <td>78480512479</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>Dinesh Kumar</td>
+                                <td>Professor</td>
+                                <td>+91 8895912301</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>Dr. Narayan Chandra Biswal</td>
+                                <td>Professor</td>
+                                <td>9437199954</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>Dr. Firoz Ahmad</td>
+                                <td>Professor</td>
+                                <td>9534088000</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Prof. G. C. Mishra</td>
+                                <td>Professor</td>
+                                <td>7655042654</td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>AMRESH MOHANTY</td>
+                                <td>Professor</td>
+                                <td></td>
+                                <td>Balasore</td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>Sudhakar Tripathy</td>
+                                <td>Professor</td>
+                                <td>9438073095</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>33</td>
+                                <td>Nagesh</td>
+                                <td>Professor</td>
+                                <td>9444620292</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>Dr.Susanta Kumar Mishra</td>
+                                <td>Professor</td>
+                                <td>9437051464</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>35</td>
+                                <td>Dr. Abhinna Ch Biswal</td>
+                                <td>Professor</td>
+                                <td>+91 9632220760</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>Dr. Jayakishan Meher</td>
+                                <td>Professor</td>
+                                <td>9437151429</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td>Dr. Ashok Misra</td>
+                                <td>Professor</td>
+                                <td>9937563329</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>Dr.Sudhansu Sekhar Nayak</td>
+                                <td>Professor</td>
+                                <td>9861260374</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td>Namballa Venugopala Rao</td>
+                                <td>Professor</td>
+                                <td>09441584969</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>Dr. G. N. Inndresha</td>
+                                <td>Professor</td>
+                                <td>8971542145</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td>Dr. Raghu Gogada</td>
+                                <td>Professor</td>
+                                <td>91-8978873672</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>Dipankar Bhattacharyay</td>
+                                <td>Professor</td>
+                                <td>9007716604</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>Dr. Prafulla Kumar Sahu</td>
+                                <td>Professor</td>
+                                <td>8121139575</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>pranab</td>
+                                <td>Professor</td>
+                                <td>9658866642</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>Dr.V.Narsimha Reddy</td>
+                                <td>Professor</td>
+                                <td>9440302931</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>Dr. Sivala Kumar</td>
+                                <td>Professor</td>
+                                <td>7989927565</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>47</td>
+                                <td>Dr. Anath Bandhu Das</td>
+                                <td>Professor</td>
+                                <td>9437633091</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>KVD Prakash</td>
+                                <td>Professor</td>
+                                <td>9654477365</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>49</td>
+                                <td>Prof. Prasanta Kumar Panigrahi</td>
+                                <td>Professor</td>
+                                <td>9437791111</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>Dr. Niranjan Barik</td>
+                                <td>Professor</td>
+                                <td>9938300353</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>51</td>
+                                <td>Dr. Prafulla Kumar Sahoo</td>
+                                <td>Professor</td>
+                                <td>9437300921</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>52</td>
+                                <td>Dr. Tanuja Biswal</td>
+                                <td>Professor</td>
+                                <td>9437479117</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>53</td>
+                                <td>Dr. Sujata Chakravarty</td>
+                                <td>Professor</td>
+                                <td>9437376421</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>54</td>
+                                <td>Dr. Sangram Samal</td>
+                                <td>Professor</td>
+                                <td>07008323684</td>
+                                <td>Bhadrak</td>
+                            </tr>
+                            <tr>
+                                <td>55</td>
+                                <td>Praveen Boddana</td>
+                                <td>Professor</td>
+                                <td>9440451395</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>56</td>
+                                <td>Dr. K V G Krishnamurty</td>
+                                <td>Professor</td>
+                                <td>9985687950</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>57</td>
+                                <td>Dr. Adikanda khamari</td>
+                                <td>Professor</td>
+                                <td>7848051078</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>58</td>
+                                <td>Bammidi Chakrapani</td>
+                                <td>Professor</td>
+                                <td>9110770312</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>59</td>
+                                <td>Dr. R. C. Mohanty</td>
+                                <td>Professor</td>
+                                <td>9437189430</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>Dr. Swapna Nanda Rath</td>
+                                <td>Professor</td>
+                                <td>9437206050</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>61</td>
+                                <td>KAPILESWAR MISHRA</td>
+                                <td>Professor</td>
+                                <td>09437764060</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>62</td>
+                                <td>Sridhar Palo</td>
+                                <td>Professor</td>
+                                <td></td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>63</td>
+                                <td>Royal hacker</td>
+                                <td>Professor</td>
+                                <td>7848051278</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>64</td>
+                                <td>GIRIJA</td>
+                                <td>Professor</td>
+                                <td>9598324808</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>65</td>
+                                <td>Dr. Subrata Sarangi</td>
+                                <td>Professor</td>
+                                <td>7735782033</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>66</td>
+                                <td>Jonnalagadda Anil Kumar</td>
+                                <td>Professor</td>
+                                <td>7680812999</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>67</td>
+                                <td>Dr. Aruna Kumari Mishra</td>
+                                <td>Professor</td>
+                                <td>9937245456</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>68</td>
+                                <td>Gurudutta Pattnaik</td>
+                                <td>Professor</td>
+                                <td>9437280622</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>69</td>
+                                <td>Pushpalatha Ganesh</td>
+                                <td>Professor</td>
+                                <td>09178000571</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>70</td>
+                                <td>chandra sekhar patro</td>
+                                <td>Professor</td>
+                                <td>08331887509</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>71</td>
+                                <td>Dr. Hemanta Kumar Patra</td>
+                                <td>Professor</td>
+                                <td>9348391178</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>72</td>
+                                <td>Dr. Sharmistha Naik</td>
+                                <td>Professor</td>
+                                <td>7569428234</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>73</td>
+                                <td>Dr Chandana Adhikari</td>
+                                <td>Professor</td>
+                                <td>943893640</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>74</td>
+                                <td>SnehaSmruti Nanda</td>
+                                <td>Professor</td>
+                                <td>845793372</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>75</td>
+                                <td>Dr. NITYANANDA SAHOO</td>
+                                <td>Professor</td>
+                                <td>9337351009</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>76</td>
+                                <td>Dr.Aswini Kumar Rath</td>
+                                <td>Professor</td>
+                                <td>8762685532</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>77</td>
+                                <td>Prof (Dr) Aftabuz Zaman</td>
+                                <td>Professor</td>
+                                <td>8777805134</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>78</td>
+                                <td>Chandan Kumar sahu</td>
+                                <td>Professor</td>
+                                <td>7843695331</td>
+                                <td>Chatrapur</td>
+                            </tr>
+                            <tr>
+                                <td>79</td>
+                                <td>Dr. Maheswara Behera</td>
+                                <td>Professor</td>
+                                <td>9437065825</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>80</td>
+                                <td>Dr. G.A.THIVAKARAN</td>
+                                <td>Professor</td>
+                                <td>9427438803</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>81</td>
+                                <td>Dr. Amulyaratna Behera</td>
+                                <td>Professor</td>
+                                <td>8455063822</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>82</td>
+                                <td>Elliot Alderson</td>
+                                <td>Professor</td>
+                                <td>8497662446</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>83</td>
+                                <td>Dr.Susanta Kumar Biswal</td>
+                                <td>Professor</td>
+                                <td>9438607080</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>84</td>
+                                <td>Dr.Prajna Pani</td>
+                                <td>Professor</td>
+                                <td>9437197131</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>85</td>
+                                <td>Dr. Ajay Kumar Patra</td>
+                                <td>Professor</td>
+                                <td>9438621391</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>86</td>
+                                <td>Anjan Ku. Sahoo</td>
+                                <td>Associate Professor</td>
+                                <td>9437854348</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>87</td>
+                                <td>Dr. M.Vijay</td>
+                                <td>Associate Professor</td>
+                                <td>9441053630</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>88</td>
+                                <td>K LALIT KUMAR</td>
+                                <td>Associate Professor</td>
+                                <td>8327710137</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>89</td>
+                                <td>RACHANA MOHANTY</td>
+                                <td>Associate Professor</td>
+                                <td>9348096895</td>
+                                <td>Paralakhemundi</td>
+                            </tr>
+                            <tr>
+                                <td>90</td>
+                                <td>Dr. Swarnalata Jena</td>
+                                <td>Associate Professor</td>
+                                <td>9861306412</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>91</td>
+                                <td>Rahul Adhikary</td>
+                                <td>Associate Professor</td>
+                                <td>8984999653</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>92</td>
+                                <td>Tapan Dash</td>
+                                <td>Associate Professor</td>
+                                <td>7978563850/8763871293</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>93</td>
+                                <td>Santosh Kumar Ranajit</td>
+                                <td>Associate Professor</td>
+                                <td>8309054331</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>94</td>
+                                <td>Dr. Narayan Gouda</td>
+                                <td>Associate Professor</td>
+                                <td>8763890898</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>95</td>
+                                <td>Dr.Prafulla Kumar Panda</td>
+                                <td>Associate Professor</td>
+                                <td>9438269572</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>96</td>
+                                <td>Dr.Saurav Barman</td>
+                                <td>Associate Professor</td>
+                                <td>8144297933</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>97</td>
+                                <td>Dr. Durga Prasad Padhi</td>
+                                <td>Associate Professor</td>
+                                <td>9437518075</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>98</td>
+                                <td>Dr. Ranjan Kumar Sahoo</td>
+                                <td>Associate Professor</td>
+                                <td>9560758648</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>99</td>
+                                <td>Dr. Dojalisa Sahu</td>
+                                <td>Associate Professor</td>
+                                <td>7852907976</td>
+                                <td>Balangir</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td>Dr. Kamal Kumar Barik</td>
+                                <td>Associate Professor</td>
+                                <td>9439477770 / 6371893947</td>
+                                <td>Balangir</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                      </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+         <!-- Footer Start -->
+         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Employee Portal</h5>
+                        <a class="btn btn-link text-white-50" href="">Home</a>
+                        <a class="btn btn-link text-white-50" href="">Employee Details</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="">Home</a>
+                        <a class="btn btn-link text-white-50" href="">Employee Details</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bhadrak, Odisha, 756171</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7848051078</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>malikkiran413@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Employee Details</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">Kiran Kumar Malik</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Employee Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
